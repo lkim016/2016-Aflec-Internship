@@ -1,0 +1,375 @@
+html {
+  font-family: "Century Gothic";
+  width: 100%;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+	  margin: 0px;
+}
+
+/* ------------------- Enrollment Header and Step1 ----------------*/
+
+.header {
+    background: #000066;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+}
+
+.step1 { 
+
+    background-color: #f2f2f2;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    background-color: #f2f2f2;
+}
+
+ .ever-logo {
+    width: 250px;
+    height: 250px;
+    border: 2px solid;
+    border-color: #545454;
+  }
+
+ .logo {
+    width: 250px;
+    height: 250px;
+    border: 2px solid;
+    border-color: #545454;
+    background-color: white;
+  } 
+
+  .flexbox-parent {
+    display: flex;
+   /* flex-wrap: wrap; */
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: space-around;
+  }
+
+  .flexbox-item {
+
+  }
+
+
+@media(min-width:992px){
+  .logo { width: 350px;
+          height: 350px;
+  }
+  .ever-logo { width: 350px;
+               height: 350px;
+  }
+}
+
+@media(max-width:570px){
+  .logo { width: 200px;
+          height: 200px;
+  }
+  .ever-logo { width: 200px;
+               height: 200px;
+  }
+}
+
+@media(max-width:420px){
+    .logo { width: 120px;
+            height: 120px;
+    }
+    .ever-logo { width: 120px;
+                height: 120px;
+    }
+}
+
+@media(max-width:300px){
+  .logo { width: 100px;
+          height: 100px;
+  }
+  .ever-logo { width: 100px;
+               height: 100px;
+  }
+}
+
+@media(max-width:200px){
+  .logo { width: 60px;
+          height: 60px;
+  }
+  .ever-logo { width: 60px;
+               height: 60px;
+  }
+}
+
+
+/*--------- Enrollment Step 2 & 3 ---------*/
+.step2and3font {
+    font-family: "Century Gothic";
+
+    padding:10px;
+    margin: auto; 
+    background-color: #f2f2f2;
+
+    border: 1px solid black;
+  }
+.step2and3flexbox{
+    margin: 5px;
+    padding-top: 35px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+  }
+.step2box, .step3box {
+    position: relative;
+    display: inline-block;
+    padding-left: 108px;
+    padding-bottom: 35px;
+    padding-right: 108px;
+  }
+
+.step2and3flexbox th{
+  padding-bottom: 20px;
+  font-size:1.5em;;
+    text-align: left;
+    font-family: "Century Gothic";
+}
+
+.jobinput[type="text"],
+.jobinput[type="phone"],
+.jobinput[type="email"],
+.jobinput[type="number"],
+.jobinput[type="address"],
+.jobinput[type="search"],
+.jobinput[type="tel"],
+.jobinput[type="time"],
+.jobinput[type="url"]
+{
+
+  border: none;
+  font-size: 10pt;
+  height: 30px;
+  padding-top: 8px;
+  /*width: 40%; */
+  margin-right : 8px;
+
+  color: #8a97a0;
+  background-color: transparent;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+
+/* ----------------Career Section ----------- */
+
+.service-text {
+	padding: 20px 0px;
+	text-align: left;
+	background-color: #f2f2f2;
+	}
+
+.service-text h2 {
+	margin-left: 30px;
+}
+
+.service-text p {
+	padding-bottom: 50px;
+}
+
+.service-thumb {
+	overflow: hidden;
+	position: relative;
+
+}
+
+.service-thumb {
+	width: 100%;
+	height: 200px;
+	border-style:dotted;
+    border-color: black;
+
+}
+
+/* ----------------
+.service-thumb .overlay-p {
+position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #72b842; visibility: hidden; opacity: 0; -webkit-transition: all 0.2s ease-in-out; -moz-transition: all 0.2s ease-in-out; -ms-transition: all 0.2s ease-in-out; -o-transition: all 0.2s ease-in-out; transition: all 0.2s ease-in-out;}  ----------- */
+
+.service-thumb .overlay-p a {
+	position: absolute;
+	top: 20%;
+	margin-top: -12px;
+	left: 10%;
+	width: 80%;
+	margin-left: -15px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+.service-thumb .overlay-p p {
+    width: 100%;
+  	height: 1px;
+    border: solid;
+	margin-top: 80px;
+	line-height: 40px;
+	font-size: 20px;
+}
+
+.service-item {
+	margin-bottom: 9px;
+
+}
+
+.service-item:hover .overlay-p {
+	visibility: visible; opacity: 1;
+}
+
+@media(max-width:767px){
+	.templatemo_service	{ padding-top: 130px; }
+}
+
+.service-container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}
+.service-container:before,.service-container:after{display:table;content:" "}
+.service-container:after{clear:both}
+.service-container:before,.service-container:after{display:table;content:" "}
+.service-container:after{clear:both}
+
+@media(min-width:768px){.service-container{width:750px}}
+
+@media(min-width:992px){.service-container{width:970px}}
+
+@media(min-width:1200px){.service-container{width:1170px}}
+
+.job-column-3,.job-column-1,.job-column-2{position:relative;min-height:1px;padding-right:5px;padding-left:5px}
+
+.job-column-1{float:left}
+
+.job-column-1{width:50%}
+
+@media(min-width:768px){
+.job-column-2{float:left}
+
+.job-column-2{width:50%}}
+
+@media(min-width:992px){
+.job-column-3{float:left}
+
+.job-column-3{width:25%}
+}
+
+@media print{img{page-break-inside:avoid}img{max-width:100%!important}}
+
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+
+
+
+
+/** pre-registration */
+.step7 {
+  height:auto;
+    background-color: #f2f2f2;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    display: block;
+    /** border-style :solid;
+    border-color: #545454;*/
+}
+
+.p-step7{
+  margin-left: 5%;
+  line-height: 145%;
+  color:red;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+
+.btn-apply2 {
+  border-radius: 0;
+	color: #fff;
+	text-align:center;
+	background-color: grey;
+	width: 40%;
+	height: 60px;
+	font-size: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	border-radius: 5px;
+	font-family: Century Gothic;
+	position: relative;
+  left:25%;
+	top:5px;
+	display: inline-block;
+}
+
+.btn-apply2 {
+	text-decoration:none;
+}
+
+a.btn-apply2:hover, a.btn-apply2:active {color: white;}
+
+a.btn-apply2:visited {
+    color: white;
+}
+
+a.btn-apply2:link {
+    color: white;
+}
+
+/* Styles for dialog window */
+.small-dialog2 {
+	background: white;
+	padding: 20px 30px;
+	text-align: left;
+	max-width: 500px;
+	margin: 40px auto;
+	position: relative;
+}
+
+
+input.myform{
+  height: 15px;
+  width: 15px;
+  margin-left: 5%;
+}
+
+.myform{
+  font-size: 120%;
+}
+/*----------  Footer Section --------*/
+
+#footer {
+
+/*margin-top: 640px;*/
+ 
+ width: 100%;
+ height: 85px;
+ padding: 20px;
+ background: #000066;
+ color: white;
+}
+
+h3{
+  color:white;
+  margin-left: 20px;
+}
+.footerimg {
+  position:relative;
+  width:25px;
+  height:25px;
+  border:0;
+  top:-30px;
+}
